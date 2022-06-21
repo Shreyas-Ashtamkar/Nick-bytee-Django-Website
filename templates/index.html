@@ -1,4 +1,4 @@
-
+{% load static %}
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -15,17 +15,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
 <!-- jQuery -->
 <!-- lined-icons -->
-<link rel="stylesheet" href="css/icon-font.css" type='text/css' />
+<link rel="stylesheet" href="{% static 'css/icon-font.css' %}" type='text/css' />
 <!-- //lined-icons -->
  <!-- Meters graphs -->
-<script src="js/jquery-2.1.4.js"></script>
+<script src="{% static 'js/jquery-2.1.4.js' %}"></script>
 
 
 </head> 
@@ -48,11 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<!--sidebar nav start-->
 					<ul class="nav nav-pills nav-stacked custom-nav">
-						<li class="active"><a href="index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
-						<li><a href="radio.html"><i class="camera"></i> <span>Radio</span></a></li>
+						<li class="active"><a href="home"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+						<li><a href="radio"><i class="camera"></i> <span>Radio</span></a></li>
 						<li><a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-th"></i><span>Apps</span></a></li>
-						<li><a href="radio.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li> 
-						<li><a href="browse.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
+						<li><a href="radio"><i class="lnr lnr-users"></i> <span>Artists</span></a></li> 
+						<li><a href="browse"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
 						<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i> <span>Browser</span></a>  
 							<ul class="sub-menu-list">
 								<li><a href="browse.html">Artists</a> </li>
@@ -91,13 +91,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Download and Avail Special Songs Videos and Audios.</p>
 							<div class="app-devices">
 								<h5>Gets the app from</h5>
-								<a href="#"><img src="images/1.png" alt=""></a>
-								<a href="#"><img src="images/2.png" alt=""></a>
+								<a href="#"><img src="{% static 'images/1.png' %}" alt=""></a>
+								<a href="#"><img src="{% static 'images/2.png' %}" alt=""></a>
 								<div class="clearfix"> </div>
 							</div>
 						</div>
 						<div class="col-md-7 app-image">
-							<img src="images/apps.png" alt="">
+							<img src="{% static 'images/apps.png' %}" alt="">
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -169,8 +169,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							  <!-- search-scripts -->
-									<script src="js/classie.js"></script>
-									<script src="js/uisearch.js"></script>
+									<script src="{% static 'js/classie.js' %}"></script>
+									<script src="{% static 'js/uisearch.js' %}"></script>
 										<script>
 											new UISearch( document.getElementById( 'sb-search' ) );
 										</script>
@@ -179,10 +179,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											  <div class="col-md-4 player">
 													<div class="audio-player">
 														<audio id="audio-player"  controls="controls">
-														<source src="media/Blue Browne.ogg" type="audio/ogg"></source>
-																<source src="media/Blue Browne.mp3" type="audio/mpeg"></source>
-																<source src="media/Georgia.ogg" type="audio/ogg"></source>
-																<source src="media/Georgia.mp3" type="audio/mpeg"></source></audio>
+														<source src="{% static 'media/Blue Browne.ogg' %}" type="audio/ogg"></source>
+																<source src="{% static 'media/Blue Browne.mp3' %}" type="audio/mpeg"></source>
+																<source src="{% static 'media/Georgia.ogg' %}" type="audio/ogg"></source>
+																<source src="{% static 'media/Georgia.mp3' %}" type="audio/mpeg"></source></audio>
 														</div>
 												<!---->
 												<script type="text/javascript">
@@ -199,14 +199,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</script>
 												<!--audio-->
 													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
-													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+													<script type="text/javascript" src="{% static 'js/mediaelement-and-player.min.js' %}"></script>
 													<!---->
 
 
 												<!--//-->
 												<ul class="next-top">
-													<li><a class="ar" href="#"> <img src="images/arrow.png" alt=""/></a></li>
-													<li><a class="ar2" href="#"><img src="images/arrow2.png" alt=""/></i></a></li>
+													<li><a class="ar" href="#"> <img src="{% static 'images/arrow.png' %}" alt=""/></a></li>
+													<li><a class="ar2" href="#"><img src="{% static 'images/arrow2.png' %}" alt=""/></i></a></li>
 														
 											 </ul>	
 											</div>
@@ -253,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<ul class="rslides callbacks callbacks1" id="slider4">
 											   	<li>
 														<div class="banner-img">
-															 <img src="images/11.jpg" class="img-responsive" alt="">
+															 <img src="{% static 'images/11.jpg' %}" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
 														              <a class="trend" href="single.html">TRENDING</a>
@@ -264,7 +264,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.jpg" class="img-responsive" alt="">
+															 <img src="{% static 'images/22.jpg' %}" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
 																	  <a class="trend" href="single.html">TRENDING</a>
@@ -276,7 +276,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 												 <div class="banner-img">
-															 <img src="images/33.jpg" class="img-responsive" alt="">
+															 <img src="{% static 'images/33.jpg' %}" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
 														             <a class="trend" href="single.html">TRENDING</a>
@@ -289,7 +289,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 										<!--banner-->
-									<script src="js/responsiveslides.min.js"></script>
+									<script src="{% static 'js/responsiveslides.min.js' %}"></script>
 								 <script>
 									// You can also use "$(window).load(function() {"
 									$(function () {
@@ -316,8 +316,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--//End-banner-->
 					<!--albums-->
 					<!-- pop-up-box --> 
-							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
-							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							<link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all">
+							<script src="{% static 'js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
 							 <script>
 									$(document).ready(function() {
 									$('.popup-with-zoom-anim').magnificPopup({
@@ -341,7 +341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 								<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v1.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v1.jpg' %}" title="allbum-name"></a>
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div id="small-dialog" class="mfp-hide">
@@ -349,22 +349,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v2.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v2.jpg' %}" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v3.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v3.jpg' %}" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v4.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v4.jpg' %}" title="allbum-name"></a>
 	
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v5.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v5.jpg' %}" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
@@ -373,17 +373,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v6.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v6.jpg' %}" title="allbum-name"></a>
 		
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v7.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v7.jpg' %}" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v8.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v8.jpg' %}" title="allbum-name"></a>
 												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
 											</div>
 											<div class="clearfix"> </div>
@@ -398,35 +398,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="clearfix"> </div>
 										</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="{% static 'images/v11.jpg' %}" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v22.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v33.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v44.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v55.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="{% static 'images/v66.jpg' %}" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v11.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="{% static 'images/v22.jpg' %}" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="clearfix"> </div>
@@ -441,7 +441,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="video-record-list">
 										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
 											<div class="jp-type-playlist">
-												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" src="video/play1.png" style="width: 480px; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" src="http://192.168.30.9/vijayaa/2015/Dec/mosaic/web/video/Ellie-Goulding.webm" title="1. Ellie-Goulding" style="width: 0px; height: 0px;"></video></div>
+												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" src="{% static 'video/play1.png' %}" style="width: 480px; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" src="http://192.168.30.9/vijayaa/2015/Dec/mosaic/web/video/Ellie-Goulding.webm" title="1. Ellie-Goulding" style="width: 0px; height: 0px;"></video></div>
 												<div class="jp-gui">
 													<div class="jp-video-play" style="display: block;">
 														<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
@@ -488,9 +488,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 								<!-- script for play-list -->
-				<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
-				<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-				<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+				<link href="{% static 'css/jplayer.blue.monday.min.css' %}" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="{% static 'js/jquery.jplayer.min.js' %}"></script>
+				<script type="text/javascript" src="{% static 'js/jplayer.playlist.min.js' %}"></script>
 				<script type="text/javascript">
 				//<![CDATA[
 				$(document).ready(function(){
@@ -503,58 +503,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						{
 							title:"1. Ellie-Goulding",
 							artist:"",
-							mp4: "video/Ellie-Goulding.mp4",
-							ogv: "video/Ellie-Goulding.ogv",
-							webmv: "video/Ellie-Goulding.webm",
-							poster:"video/play1.png"
+							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
+							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
+							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
+							poster:"{% static 'video/play1.png' %}"
 						},
 						{
 							title:"2. Mark-Ronson-Uptown",
 							artist:"",
-							mp4: "video/Mark-Ronson-Uptown.mp4",
-							ogv: "video/Mark-Ronson-Uptown.ogv",
-							webmv: "video/Mark-Ronson-Uptown.webm",
-							poster:"video/play2.png"
+							mp4: "{% static 'video/Mark-Ronson-Uptown.mp4' %}",
+							ogv: "{% static 'video/Mark-Ronson-Uptown.ogv' %}",
+							webmv: "{% static 'video/Mark-Ronson-Uptown.webm' %}",
+							poster:"{% static 'video/play2.png' %}"
 						},
 						{
 							title:"3. Ellie-Goulding",
 							artist:"",
-							mp4: "video/Ellie-Goulding.mp4",
-							ogv: "video/Ellie-Goulding.ogv",
-							webmv: "video/Ellie-Goulding.webm",
-							poster:"video/play1.png"
+							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
+							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
+							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
+							poster:"{% static 'video/play1.png' %}"
 						},
 						{
 							title:"4. Maroon-Sugar",
 							artist:"",
-							mp4: "video/Maroon-Sugar.mp4",
-							ogv: "video/Maroon-Sugar.ogv",
-							webmv: "video/Maroon-Sugar.webm",
-							poster:"video/play4.png"
+							mp4: "{% static 'video/Maroon-Sugar.mp4' %}",
+							ogv: "{% static 'video/Maroon-Sugar.ogv' %}",
+							webmv: "{% static 'video/Maroon-Sugar.webm' %}",
+							poster:"{% static 'video/play4.png' %}"
 						},
 						{
 							title:"5. Pharrell-Williams",
 							artist:"",
-							mp4: "video/Pharrell-Williams.mp4",
-							ogv: "video/Pharrell-Williams.ogv",
-							webmv: "video/Pharrell-Williams.webm",
-							poster:"video/play5.png"
+							mp4: "{% static 'video/Pharrell-Williams.mp4' %}",
+							ogv: "{% static 'video/Pharrell-Williams.ogv' %}",
+							webmv: "{% static 'video/Pharrell-Williams.webm' %}",
+							poster:"{% static 'video/play5.png' %}"
 						},
 						{
 							title:"6. Ellie-Goulding",
 							artist:"",
-							mp4: "video/Ellie-Goulding.mp4",
-							ogv: "video/Ellie-Goulding.ogv",
-							webmv: "video/Ellie-Goulding.webm",
-							poster:"video/play1.png"
+							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
+							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
+							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
+							poster:"{% static 'video/play1.png' %}"
 						},
 						{
 							title:"7. Pharrell-Williams",
 							artist:"",
-							mp4: "video/Pharrell-Williams.mp4",
-							ogv: "video/Pharrell-Williams.ogv",
-							webmv: "video/Pharrell-Williams.webm",
-							poster:"video/play5.png"
+							mp4: "{% static 'video/Pharrell-Williams.mp4' %}",
+							ogv: "{% static 'video/Pharrell-Williams.ogv' %}",
+							webmv: "{% static 'video/Pharrell-Williams.webm' %}",
+							poster:"{% static 'video/play5.png' %}"
 						}
 					], {
 						swfPath: "../../dist/jplayer",
@@ -575,10 +575,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="apps">
 												<h3 class="hd-tittle">Mosaic now available in</h3>
 												<div class="banner-button">
-													<a href="#"><img src="images/1.png" alt=""></a>
+													<a href="#"><img src="{% static 'images/1.png' %}" alt=""></a>
 												</div>
 												<div class="banner-button green-button">
-													<a href="#"><img src="images/2.png" alt=""></a>
+													<a href="#"><img src="{% static 'images/2.png' %}" alt=""></a>
 												</div>
 													<div class="clearfix"></div>
 										</div>
@@ -635,7 +635,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								 <ul id="flexiselDemo1">
 								<li>
-									<a href="single.html"><img src="images/v1.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v1.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Adele21 </div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -645,7 +645,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v2.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v2.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Adele21</h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -655,7 +655,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v3.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v3.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Shomlock</h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -665,7 +665,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v4.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v4.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Stuck on a feeling</h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -675,7 +675,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v5.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v5.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Ricky Martine </h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -685,7 +685,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v6.jpg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v6.jpg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Ellie Goluding </h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -695,7 +695,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v6.jpeg" alt=""/></a>
+									<a href="single.html"><img src="{% static 'images/v6.jpeg' %}" alt=""/></a>
 									<div class="slide-title"><h4>Fifty Shades </h4></div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
@@ -732,7 +732,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							});
 							});
 						</script>
-						<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+						<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>	
 						</div>
 								</div>
 							<div class="clearfix"></div>
@@ -745,7 +745,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>Navigation</h3>
 					<ul class="list1">
 					  <li><a href="index.html">Home</a></li>
-					  <li><a href="radio.html">All Songs</a></li>
+					  <li><a href="radio/">All Songs</a></li>
 					  <li><a href="browse.html">Albums</a></li>
 					  <li><a href="radio.html">New Collections</a></li>
 					  <li><a href="blog.html">Blog</a></li>
@@ -804,9 +804,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <!-- main content end-->
    </section>
   
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
+<script src="{% static 'js/jquery.nicescroll.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.js"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 </html>
