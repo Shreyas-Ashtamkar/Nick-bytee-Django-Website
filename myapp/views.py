@@ -4,5 +4,8 @@ from django.shortcuts import render
 def home(request):
     return render(request,'index.html')
 
-def radio(request):
-    return render(request, 'radio1.html')
+def catalog1(request):
+    return render(request,'catalog1.html')
+
+def catalog2(request):
+    return render(request, 'catalog2.html')

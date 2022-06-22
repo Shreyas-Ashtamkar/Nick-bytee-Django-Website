@@ -1,812 +1,1626 @@
 {% load static %}
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Mosaic a Entertainment Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!-- Bootstrap Core CSS -->
-<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
-<!-- Custom CSS -->
-<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
-<!-- Graph CSS -->
-<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
-<!-- jQuery -->
-<!-- lined-icons -->
-<link rel="stylesheet" href="{% static 'css/icon-font.css' %}" type='text/css' />
-<!-- //lined-icons -->
- <!-- Meters graphs -->
-<script src="{% static 'js/jquery-2.1.4.js' %}"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
 
-</head> 
-    	 <!-- /w3layouts-agile -->
- <body class="sticky-header left-side-collapsed"  onload="initMap()">
-    <section>
-      <!-- left side start-->
-		<div class="left-side sticky-left-side">
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/plyr.css' %}">
+	<link rel="stylesheet" href="{% static 'css/photoswipe.css' %}">
+	<link rel="stylesheet" href="{% static 'css/default-skin.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
 
-			<!--logo and iconic logo start-->
-			<div class="logo">
-				<h1><a href="index.html">Mosai<span>c</span></a></h1>
-			</div>
-			<div class="logo-icon text-center">
-				<a href="index.html">M </a>
-			</div>
- 	 <!-- /w3l-agile -->
-			<!--logo and iconic logo end-->
-			<div class="left-side-inner">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="{% static 'icon/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{% static 'icon/favicon-32x32.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'icon/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'icon/apple-touch-icon-114x114.png' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'icon/apple-touch-icon-144x144.png' %}">
 
-				<!--sidebar nav start-->
-					<ul class="nav nav-pills nav-stacked custom-nav">
-						<li class="active"><a href="home"><i class="lnr lnr-home"></i><span>Home</span></a></li>
-						<li><a href="radio"><i class="camera"></i> <span>Radio</span></a></li>
-						<li><a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-th"></i><span>Apps</span></a></li>
-						<li><a href="radio"><i class="lnr lnr-users"></i> <span>Artists</span></a></li> 
-						<li><a href="browse"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
-						<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i> <span>Browser</span></a>  
-							<ul class="sub-menu-list">
-								<li><a href="browse.html">Artists</a> </li>
-								<li><a href="404.html">Services</a> </li>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="index" class="header__logo">
+								<img src="{% static 'img/logo.svg' %}" alt="">
+							</a>
+							<!-- end header logo -->
+
+							<!-- header nav -->
+							<ul class="header__nav">
+								<!-- dropdown -->
+								<li class="header__nav-item">
+									<a class="dropdown-toggle header__nav-link" href="home" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+								</li>
+								<!-- end dropdown -->
+
+								<!-- dropdown -->
+								<li class="header__nav-item">
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+
+									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+										<li><a href="Hollywood">Hollywood Movies</a></li>
+										<li><a href="Bollywood">Bollywood Movies</a></li>
+										<li><a href="Tollywood">Details Movie</a></li>
+										<li><a href="Webseries">Details TV Series</a></li>
+									</ul>
+								</li>
+								<!-- end dropdown -->
+
+								<li class="header__nav-item">
+									<a href="pricing" class="header__nav-link">Pricing Plan</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="faq" class="header__nav-link">Help</a>
+								</li>
+
+								<!-- dropdown -->
+								<li class="dropdown header__nav-item">
+									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-ios-more"></i></a>
+
+									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+										<li><a href="about">About</a></li>
+										<li><a href="signin">Sign In</a></li>
+										<li><a href="signup">Sign Up</a></li>
+										<li><a href="404">404 Page</a></li>
+									</ul>
+								</li>
+								<!-- end dropdown -->
 							</ul>
-						</li>
-						<li><a href="blog.html"><i class="lnr lnr-book"></i><span>Blog</span></a></li>
-						<li><a href="typography.html"><i class="lnr lnr-pencil"></i> <span>Typography</span></a></li>
-						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>My Favourities</span></a> 
-							<ul class="sub-menu-list">
-								<li><a href="radio.html">All Songs</a></li>
-							</ul>
-						</li>
-						<li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
-							<ul class="sub-menu-list">
-								<li><a href="contact.html">Location</a> </li>
-							</ul>
-						</li>     
-					</ul>
-				<!--sidebar nav end-->
+							<!-- end header nav -->
+
+							<!-- header auth -->
+							<div class="header__auth">
+								<button class="header__search-btn" type="button">
+									<i class="icon ion-ios-search"></i>
+								</button>
+
+								<a href="signin" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>sign in</span>
+								</a>
+							</div>
+							<!-- end header auth -->
+
+							<!-- header menu btn -->
+							<button class="header__btn" type="button">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<!-- end header menu btn -->
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		 	 <!-- /w3layouts-agile -->
-					<!-- app-->
-			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog facebook" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="app-grids">
-								<div class="app">
-						<div class="col-md-5 app-left mpl">
-							<h3>Mosaic mobile app on your smartphone!</h3>
-							<p>Download and Avail Special Songs Videos and Audios.</p>
-							<div class="app-devices">
-								<h5>Gets the app from</h5>
-								<a href="#"><img src="{% static 'images/1.png' %}" alt=""></a>
-								<a href="#"><img src="{% static 'images/2.png' %}" alt=""></a>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="col-md-7 app-image">
-							<img src="{% static 'images/apps.png' %}" alt="">
-						</div>
-						<div class="clearfix"></div>
-					</div>
-							</div>
+
+		<!-- header search -->
+		<form action="#" class="header__search">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__search-content">
+							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
+
+							<button type="button">search</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- //app-->
- 	 <!-- /w3l-agile -->
-		<!-- signup -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="sign-grids">
-								<div class="sign">
-									<div class="sign-left">
-										<ul>
-											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
-											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
-										</ul>
-									</div>
-									<div class="sign-right">
-										<form action="#" method="post">
+		</form>
+		<!-- end header search -->
+	</header>
+	<!-- end header -->
 
-											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											
-											<input type="submit" value="CREATE ACCOUNT" >
-										</form>
-									</div>
-									<div class="clearfix"></div>								
+	<!-- home -->
+	<section class="home">
+		<!-- home bg -->
+		<div class="owl-carousel home__bg">
+			<div class="item home__cover" data-bg="{% static 'img/home/home__bg.jpg' %}"></div>
+			<div class="item home__cover" data-bg="{% static 'img/home/home__bg2.jpg' %}"></div>
+			<div class="item home__cover" data-bg="{% static 'img/home/home__bg3.jpg' %}"></div>
+			<div class="item home__cover" data-bg="{% static 'img/home/home__bg4.jpg' %}"></div>
+		</div>
+		<!-- end home bg -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="home__title"><b>NEW ITEMS</b> OF THIS SEASON</h1>
+
+					<button class="home__nav home__nav--prev" type="button">
+						<i class="icon ion-ios-arrow-round-back"></i>
+					</button>
+					<button class="home__nav home__nav--next" type="button">
+						<i class="icon ion-ios-arrow-round-forward"></i>
+					</button>
+				</div>
+
+				<div class="col-12">
+					<div class="owl-carousel home__carousel">
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
 								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
 							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+							<!-- end card -->
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- //signup -->
- 	 <!-- /w3l-agile -->
-		<!-- left side end-->
-		<!-- main content start-->
-		<div class="main-content">
-			<!-- header-starts -->
-			<div class="header-section">
-			<!--toggle button start-->
-			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
-			<!--toggle button end-->
-			<!--notification menu start -->
-				<div class="menu-right">
-					<div class="profile_details">		
-						  <div class="col-md-4 serch-part">
-								<div id="sb-search" class="sb-search">
-									<form action="#" method="post">
+		</div>
+	</section>
+	<!-- end home -->
 
-										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
-										<input class="sb-search-submit" type="submit" value="">
-										<span class="sb-icon-search"> </span>
-									</form>
-								</div>
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						<h2 class="content__title">New items</h2>
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">NEW RELEASES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">CARTOONS</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="New items">
+								<span></span>
 							</div>
-							  <!-- search-scripts -->
-									<script src="{% static 'js/classie.js' %}"></script>
-									<script src="{% static 'js/uisearch.js' %}"></script>
-										<script>
-											new UISearch( document.getElementById( 'sb-search' ) );
-										</script>
-									<!-- //search-scripts -->
-											 <!---->
-											  <div class="col-md-4 player">
-													<div class="audio-player">
-														<audio id="audio-player"  controls="controls">
-														<source src="{% static 'media/Blue Browne.ogg' %}" type="audio/ogg"></source>
-																<source src="{% static 'media/Blue Browne.mp3' %}" type="audio/mpeg"></source>
-																<source src="{% static 'media/Georgia.ogg' %}" type="audio/ogg"></source>
-																<source src="{% static 'media/Georgia.mp3' %}" type="audio/mpeg"></source></audio>
-														</div>
-												<!---->
-												<script type="text/javascript">
-													$(function(){
-													  $('#audio-player').mediaelementplayer({
-														alwaysShowControls: true,
-														features: ['playpause','progress','volume'],
-														audioVolume: 'horizontal',
-														iPadUseNativeControls: true,
-														iPhoneUseNativeControls: true,
-														AndroidUseNativeControls: true
-													});
-												 });
-												</script>
-												<!--audio-->
-													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
-													<script type="text/javascript" src="{% static 'js/mediaelement-and-player.min.js' %}"></script>
-													<!---->
 
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">NEW RELEASES</a></li>
 
-												<!--//-->
-												<ul class="next-top">
-													<li><a class="ar" href="#"> <img src="{% static 'images/arrow.png' %}" alt=""/></a></li>
-													<li><a class="ar2" href="#"><img src="{% static 'images/arrow2.png' %}" alt=""/></i></a></li>
-														
-											 </ul>	
-											</div>
-											<div class="col-md-4 login-pop">
-												<div id="loginpop"> <a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
-														<div id="loginBox">  
-												<form action="#" method="post" id="loginForm">
-																	<fieldset id="body">
-																		<fieldset>
-																			  <label for="email">Email Address</label>
-																			  <input type="text" name="email" id="email">
-																		</fieldset>
-																		<fieldset>
-																				<label for="password">Password</label>
-																				<input type="password" name="password" id="password">
-																		 </fieldset>
-																		<input type="submit" id="login" value="Sign in">
-																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-																	</fieldset>
-																<span><a href="#">Forgot your password?</a></span>
-														 </form>
-													</div>
-												</div>
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a></li>
 
-											</div>
-										<div class="clearfix"> </div>
-								</div>
-							<!-------->
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">CARTOONS</a></li>
+								</ul>
+							</div>
 						</div>
-					<div class="clearfix"></div>
-				</div>
-			<!--notification menu end -->
-			<!-- //header-ends -->
- 	 <!-- /w3l-agileits -->
-		<!-- //header-ends -->
-			<div id="page-wrapper">
-				<div class="inner-content">
-				
-				      <div class="music-left">
-					      <!--banner-section-->
-							<div class="banner-section">
-								<div class="banner">
-									 <div class="callbacks_container">
-										<ul class="rslides callbacks callbacks1" id="slider4">
-											   	<li>
-														<div class="banner-img">
-															 <img src="{% static 'images/11.jpg' %}" class="img-responsive" alt="">
-														 </div>
-														<div class="banner-info">
-														              <a class="trend" href="single.html">TRENDING</a>
-																	  <h3>Let Your Home</h3>
-																	  <p>Album by <span>Rock star</span></p>
-														 </div>
-
-												</li>
-												<li>
-													<div class="banner-img">
-															 <img src="{% static 'images/22.jpg' %}" class="img-responsive" alt="">
-														 </div>
-														<div class="banner-info">
-																	  <a class="trend" href="single.html">TRENDING</a>
-																	  <h3>Charis Brown feet</h3>
-																	  <p>Album by <span>Rock star</span></p>
-														 </div>
-
-
-												</li>
-												<li>
-												 <div class="banner-img">
-															 <img src="{% static 'images/33.jpg' %}" class="img-responsive" alt="">
-														 </div>
-														<div class="banner-info"> 
-														             <a class="trend" href="single.html">TRENDING</a>
-																	  <h3>Let Your Home</h3>
-																	  <p>Album by <span>Rock star</span></p>
-														 </div>
-
-												 	 <!-- /w3layouts-agileits -->
-												</li>
-											</ul>
-										</div>
-										<!--banner-->
-									<script src="{% static 'js/responsiveslides.min.js' %}"></script>
-								 <script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									  // Slideshow 4
-									  $("#slider4").responsiveSlides({
-										auto: true,
-										pager:true,
-										nav:true,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-										  $('.events').append("<li>before event fired.</li>");
-										},
-										after: function () {
-										  $('.events').append("<li>after event fired.</li>");
-										}
-									  });
-								
-									});
-								  </script>
-								<div class="clearfix"> </div>
-							</div>
-						</div>	
-				<!--//End-banner-->
-					<!--albums-->
-					<!-- pop-up-box --> 
-							<link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all">
-							<script src="{% static 'js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
-							 <script>
-									$(document).ready(function() {
-									$('.popup-with-zoom-anim').magnificPopup({
-										type: 'inline',
-										fixedContentPos: false,
-										fixedBgPos: true,
-										overflowY: 'auto',
-										closeBtnInside: true,
-										preloader: false,
-										midClick: true,
-										removalDelay: 300,
-										mainClass: 'my-mfp-zoom-in'
-									});
-									});
-							</script>		
-					<!--//pop-up-box -->
-						<div class="albums">
-								<div class="tittle-head">
-									<h3 class="tittle">New Releases <span class="new">New</span></h3>
-									<a href="index.html"><h4 class="tittle">See all</h4></a>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v1.jpg' %}" title="allbum-name"></a>
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div id="small-dialog" class="mfp-hide">
-								<iframe src="https://player.vimeo.com/video/12985622"></iframe>
-								
-							</div>
-							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v2.jpg' %}" title="allbum-name"></a>
-
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v3.jpg' %}" title="allbum-name"></a>
-
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v4.jpg' %}" title="allbum-name"></a>
-	
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v5.jpg' %}" title="allbum-name"></a>
-
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div id="small-dialog" class="mfp-hide">
-								<iframe src="https://player.vimeo.com/video/12985622"></iframe>
-								
-							</div>
-							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v6.jpg' %}" title="allbum-name"></a>
-		
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v7.jpg' %}" title="allbum-name"></a>
-
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-							</div>
-							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="{% static 'images/v8.jpg' %}" title="allbum-name"></a>
-												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
-											</div>
-											<div class="clearfix"> </div>
-										</div>
-					<!--//End-albums-->
-						<!--//discover-view-->
-						
-						<div class="albums second">
-										<div class="tittle-head">
-											<h3 class="tittle">Discover <span class="new">View</span></h3>
-											<a href="index.html"><h4 class="tittle two">See all</h4></a>
-											<div class="clearfix"> </div>
-										</div>
-											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="{% static 'images/v11.jpg' %}" title="allbum-name"></a>
-												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="{% static 'images/v22.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-												</div>
-											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="{% static 'images/v33.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-												</div>
-											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="{% static 'images/v44.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="{% static 'images/v55.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="{% static 'images/v66.jpg' %}" title="allbum-name"></a>
-												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="{% static 'images/v11.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="{% static 'images/v22.jpg' %}" title="allbum-name"></a>
-													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
-											</div>
-											<div class="clearfix"> </div>
-									</div>
-								<!--//discover-view-->
-							</div>
-							<!--//music-left-->
-						    <!--/music-right-->
-						   <div class="music-right">
-								<!--/video-main-->
-								 <div class="video-main">
-									<div class="video-record-list">
-										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
-											<div class="jp-type-playlist">
-												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img id="jp_poster_0" src="{% static 'video/play1.png' %}" style="width: 480px; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" src="http://192.168.30.9/vijayaa/2015/Dec/mosaic/web/video/Ellie-Goulding.webm" title="1. Ellie-Goulding" style="width: 0px; height: 0px;"></video></div>
-												<div class="jp-gui">
-													<div class="jp-video-play" style="display: block;">
-														<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
-													</div>
-													<div class="jp-interface">
-														<div class="jp-progress">
-															<div class="jp-seek-bar" style="width: 100%;">
-																<div class="jp-play-bar" style="width: 0%;"></div>
-															</div>
-														</div>
-														<div class="jp-current-time" role="timer" aria-label="time">00:00</div>
-														<div class="jp-duration" role="timer" aria-label="duration">00:18</div>
-														<div class="jp-controls-holder">
-															<div class="jp-controls">
-																<button class="jp-previous" role="button" tabindex="0">previous</button>
-																<button class="jp-play" role="button" tabindex="0">play</button>
-															</div>
-															<div class="jp-volume-controls">
-																<button class="jp-mute" role="button" tabindex="0">mute</button>
-																<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-																<div class="jp-volume-bar">
-																	<div class="jp-volume-bar-value" style="width: 100%;"></div>
-																</div>
-															</div>
-															<div class="jp-toggles">
-															
-																<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
-															</div>
-														</div>
-														<div class="jp-details" style="display: none;">
-															<div class="jp-title" aria-label="title">1. Ellie-Goulding</div>
-														</div>
-													</div>
-												</div>
-												<div class="jp-playlist">
-													<ul style="display: block;"><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">1. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">2. Mark-Ronson-Uptown <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">3. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">4. Maroon-Sugar <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">5. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">6. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">7. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div></li></ul>
-												</div>
-												<div class="jp-no-solution" style="display: none;">
-													<span>Update Required</span>
-													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- script for play-list -->
-				<link href="{% static 'css/jplayer.blue.monday.min.css' %}" rel="stylesheet" type="text/css">
-				<script type="text/javascript" src="{% static 'js/jquery.jplayer.min.js' %}"></script>
-				<script type="text/javascript" src="{% static 'js/jplayer.playlist.min.js' %}"></script>
-				<script type="text/javascript">
-				//<![CDATA[
-				$(document).ready(function(){
-
-					new jPlayerPlaylist({
-						jPlayer: "#jquery_jplayer_1",
-						cssSelectorAncestor: "#jp_container_1"
-					}, [
-						
-						{
-							title:"1. Ellie-Goulding",
-							artist:"",
-							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
-							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
-							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
-							poster:"{% static 'video/play1.png' %}"
-						},
-						{
-							title:"2. Mark-Ronson-Uptown",
-							artist:"",
-							mp4: "{% static 'video/Mark-Ronson-Uptown.mp4' %}",
-							ogv: "{% static 'video/Mark-Ronson-Uptown.ogv' %}",
-							webmv: "{% static 'video/Mark-Ronson-Uptown.webm' %}",
-							poster:"{% static 'video/play2.png' %}"
-						},
-						{
-							title:"3. Ellie-Goulding",
-							artist:"",
-							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
-							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
-							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
-							poster:"{% static 'video/play1.png' %}"
-						},
-						{
-							title:"4. Maroon-Sugar",
-							artist:"",
-							mp4: "{% static 'video/Maroon-Sugar.mp4' %}",
-							ogv: "{% static 'video/Maroon-Sugar.ogv' %}",
-							webmv: "{% static 'video/Maroon-Sugar.webm' %}",
-							poster:"{% static 'video/play4.png' %}"
-						},
-						{
-							title:"5. Pharrell-Williams",
-							artist:"",
-							mp4: "{% static 'video/Pharrell-Williams.mp4' %}",
-							ogv: "{% static 'video/Pharrell-Williams.ogv' %}",
-							webmv: "{% static 'video/Pharrell-Williams.webm' %}",
-							poster:"{% static 'video/play5.png' %}"
-						},
-						{
-							title:"6. Ellie-Goulding",
-							artist:"",
-							mp4: "{% static 'video/Ellie-Goulding.mp4' %}",
-							ogv: "{% static 'video/Ellie-Goulding.ogv' %}",
-							webmv: "{% static 'video/Ellie-Goulding.webm' %}",
-							poster:"{% static 'video/play1.png' %}"
-						},
-						{
-							title:"7. Pharrell-Williams",
-							artist:"",
-							mp4: "{% static 'video/Pharrell-Williams.mp4' %}",
-							ogv: "{% static 'video/Pharrell-Williams.ogv' %}",
-							webmv: "{% static 'video/Pharrell-Williams.webm' %}",
-							poster:"{% static 'video/play5.png' %}"
-						}
-					], {
-						swfPath: "../../dist/jplayer",
-						supplied: "webmv,ogv,mp4",
-						useStateClassSkin: true,
-						autoBlur: false,
-						smoothPlayBar: true,
-						keyEnabled: true
-					});
-
-				});
-				//]]>
-					</script>
-			<!-- //script for play-list -->
-
-								<!--//video-main-->
-								<!--/app_store-->
-									  <div class="apps">
-												<h3 class="hd-tittle">Mosaic now available in</h3>
-												<div class="banner-button">
-													<a href="#"><img src="{% static 'images/1.png' %}" alt=""></a>
-												</div>
-												<div class="banner-button green-button">
-													<a href="#"><img src="{% static 'images/2.png' %}" alt=""></a>
-												</div>
-													<div class="clearfix"></div>
-										</div>
-								  <!--//app_store-->
-						         <!--/start-paricing-tables-->
-									<div class="price-section">
-											<div class="pricing-inner">
-												<h3 class="hd-tittle">Upgrade your Plan</h3>
-												<div class="pricing">
-													<div class="price-top">
-														<h3><span>$20</span></h3>
-														<h4>per year</h4>
-													</div>
-													<div class="price-bottom">
-														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download unlimited songs</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">No ads unlimited Devices</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-														</ul>
-														<a href="single.html" class="price">Upgrade</a>
-													</div>
-												</div>
-												<div class="pricing two">
-													<div class="price-top">
-														<h3><span>$30</span></h3>
-														<h4>per year</h4>
-													</div>
-													<div class="price-bottom">
-														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download unlimited songs</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">No ads unlimited Devices</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-														</ul>
-														<a href="single.html" class="price">Upgrade</a>
-													</div>
-												</div>
-													<div class="clearfix"></div>
-												</div>
-												<!--//end-pricing-tables-->
-												</div>
-											</div>
-													 <!--//music-right-->
-											<div class="clearfix"></div>
-			 	 <!-- /w3l-agile-its -->
-										</div>
-						<!--body wrapper start-->
-						
-						<div class="review-slider">
-								<div class="tittle-head">
-									<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
-									<div class="clearfix"> </div>
-								</div>
-								 <ul id="flexiselDemo1">
-								<li>
-									<a href="single.html"><img src="{% static 'images/v1.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Adele21 </div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v2.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Adele21</h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v3.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Shomlock</h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v4.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Stuck on a feeling</h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v5.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Ricky Martine </h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v6.jpg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Ellie Goluding </h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="single.html"><img src="{% static 'images/v6.jpeg' %}" alt=""/></a>
-									<div class="slide-title"><h4>Fifty Shades </h4></div>
-									<div class="date-city">
-										<h5>Jan-02-16</h5>
-										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<script type="text/javascript">
-						$(window).load(function() {
-							
-						  $("#flexiselDemo1").flexisel({
-								visibleItems: 5,
-								animationSpeed: 1000,
-								autoPlay: true,
-								autoPlaySpeed: 3000,    		
-								pauseOnHover: false,
-								enableResponsiveBreakpoints: true,
-								responsiveBreakpoints: { 
-									portrait: { 
-										changePoint:480,
-										visibleItems: 2
-									}, 
-									landscape: { 
-										changePoint:640,
-										visibleItems: 3
-									},
-									tablet: { 
-										changePoint:800,
-										visibleItems: 4
-									}
-								}
-							});
-							});
-						</script>
-						<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>	
-						</div>
-								</div>
-							<div class="clearfix"></div>
-						<!--body wrapper end-->
- 	 <!-- /w3l-agile -->
+						<!-- end content mobile tabs nav -->
 					</div>
-			  <!--body wrapper end-->
-			     <div class="footer">
-				<div class="footer-grid">
-					<h3>Navigation</h3>
-					<ul class="list1">
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="radio/">All Songs</a></li>
-					  <li><a href="browse.html">Albums</a></li>
-					  <li><a href="radio.html">New Collections</a></li>
-					  <li><a href="blog.html">Blog</a></li>
-					  <li><a href="contact.html">Contact</a></li>
-				    </ul>
-				</div>
-				<div class="footer-grid">
-					<h3>Our Account</h3>
-				    <ul class="list1">
-					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
-					  <li><a href="#">Personal information</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Discount</a></li>
-					  <li><a href="#">Orders history</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Search Terms</a></li>
-				    </ul>
-				</div>
-				<div class="footer-grid">
-					<h3>Our Support</h3>
-					<ul class="list1">
-					  <li><a href="contact.html">Site Map</a></li>
-					  <li><a href="#">Search Terms</a></li>
-					  <li><a href="#">Advanced Search</a></li>
-					  <li><a href="#">Mobile</a></li>
-					  <li><a href="contact.html">Contact Us</a></li>
-					  <li><a href="#">Mobile</a></li>
-					  <li><a href="#">Addresses</a></li>
-				    </ul>
-				  </div>
-					  <div class="footer-grid">
-						<h3>Newsletter</h3>
-						<p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
-						<div class="search_footer">
-						 <form>
-						   <input type="text" placeholder="Email...." required="">
-						  <input type="submit" value="Submit">
-						  </form>
-						</div>
-					 </div>
-					 <div class="footer-grid footer-grid_last">
-						<h3>About Us</h3>
-						<p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
-						<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-250-2131</p>
-						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">info(at)mailing.com</a></span></p>	
-					 </div>
-					 <div class="clearfix"> </div>
 				</div>
 			</div>
-        <!--footer section start-->
-			<footer>
-			   <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts.</a></p>
-			</footer>
-        <!--footer section end-->
- 	 <!-- /w3l-agile -->
-      <!-- main content end-->
-   </section>
-  
-<script src="{% static 'js/jquery.nicescroll.js' %}"></script>
-<script src="{% static 'js/scripts.js' %}"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="{% static 'js/bootstrap.js' %}"></script>
+		</div>
+
+		<div class="container">
+			<!-- content tabs -->
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+											<span class="card__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Benched</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Whitney</a></h3>
+											<span class="card__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+											<span class="card__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Benched</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+			</div>
+			<!-- end content tabs -->
+		</div>
+	</section>
+	<!-- end content -->
+
+	<!-- expected premiere -->
+	<section class="section section--bg" data-bg="{% static 'img/section/section.jpg' %}">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title">Expected premiere</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+							<span class="card__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover3.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Benched</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover2.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Whitney</a></h3>
+							<span class="card__category">
+								<a href="#">Romance</a>
+								<a href="#">Drama</a>
+								<a href="#">Music</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover6.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+								<a href="#">Drama</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover4.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+							<span class="card__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="{% static 'img/covers/cover5.jpg' %}" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Benched</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- section btn -->
+				<div class="col-12">
+					<a href="#" class="section__btn">Show more</a>
+				</div>
+				<!-- end section btn -->
+			</div>
+		</div>
+	</section>
+	<!-- end expected premiere -->
+
+	<!-- partners -->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title section__title--no-margin">Our Partners</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- section text -->
+				<div class="col-12">
+					<p class="section__text section__text--last-with-margin">It is a long <b>established</b> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+				</div>
+				<!-- end section text -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/themeforest-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/audiojungle-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/codecanyon-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/photodune-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/activeden-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="{% static 'img/partners/3docean-light-background.png' %}" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+			</div>
+		</div>
+	</section>
+	<!-- end partners -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- footer list -->
+				<div class="col-12 col-md-3">
+					<h6 class="footer__title">Download Our App</h6>
+					<ul class="footer__app">
+						<li><a href="#"><img src="{% static 'img/Download_on_the_App_Store_Badge.svg' %}" alt=""></a></li>
+						<li><a href="#"><img src="{% static 'img/google-play-badge.png' %}" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Resources</h6>
+					<ul class="footer__list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Pricing Plan</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Legal</h6>
+					<ul class="footer__list">
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Security</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-12 col-sm-4 col-md-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+18002345678">+1 (800) 234-5678</a></li>
+						<li><a href="mailto:support@moviego.com">support@flixgo.com</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+						<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+						<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+						<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer copyright -->
+				<div class="col-12">
+					<div class="footer__copyright">
+						<small><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></small>
+
+						<ul>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end footer copyright -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- JS -->
+	<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mCustomScrollbar.min.js' %}"></script>
+	<script src="{% static 'js/wNumb.js' %}"></script>
+	<script src="{% static 'js/nouislider.min.js' %}"></script>
+	<script src="{% static 'js/plyr.min.js' %}"></script>
+	<script src="{% static 'js/jquery.morelines.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
 </body>
+
 </html>
