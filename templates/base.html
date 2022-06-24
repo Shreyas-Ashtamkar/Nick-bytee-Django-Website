@@ -1,4 +1,5 @@
 {% load static %}
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,8 +32,9 @@
 	<title>{% block title %}{% endblock title %}</title>
 
 </head>
+
 <body class="body">
-	
+
 	<!-- header -->
 	<header class="header">
 		<div class="header__wrap">
@@ -56,13 +58,16 @@
 
 								<!-- dropdown -->
 								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button"
+										id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">Categories</a>
 
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+									<ul class="dropdown-menu header__dropdown-menu"
+										aria-labelledby="dropdownMenuCatalog">
 										<li><a href="hlwd">Hollywood Movies</a></li>
 										<li><a href="Bollywood">Bollywood Movies</a></li>
 										<li><a href="Tollywood">Tollywood Movies</a></li>
-                                        <li><a href="dualaudio">Dual Audio Movies</a></li>
+										<li><a href="dualaudio">Dual Audio Movies</a></li>
 										<li><a href="Webseries">Web Series</a></li>
 									</ul>
 								</li>
@@ -115,7 +120,7 @@
 		</form>
 		<!-- end header search -->
 	</header>
-    {% block body %} {% endblock body %}
+	{% block body %} {% endblock body %}
 
 	<!-- footer -->
 	<footer class="footer">
@@ -162,4 +167,4 @@
 	<script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
 
-    {% block footer %} {% endblock footer %}
+	{% block footer %} {% endblock footer %}

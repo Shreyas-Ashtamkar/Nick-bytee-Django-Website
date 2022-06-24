@@ -1,8 +1,11 @@
 from django.shortcuts import render
 
+from myapp.models import movies
+
 # Create your views here.
 def home(request):
-    return render(request,'index.html')
+    movie = movies.objects.all() 
+    return render(request,'index.html', {'movie' : movie})
 
 def hollywood(request):
     return render(request,'hlwd.html')
