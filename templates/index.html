@@ -12,12 +12,11 @@
 		<div class="item home__cover" data-bg="{% static 'img/home/home__bg4.jpg' %}"></div>
 	</div>
 	<!-- end home bg -->
-
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<h1 class="home__title"><b>NEW ITEMS</b> OF THIS SEASON</h1>
-
+			
 				<button class="home__nav home__nav--prev" type="button">
 					<i class="icon ion-ios-arrow-round-back"></i>
 				</button>
@@ -25,13 +24,13 @@
 					<i class="icon ion-ios-arrow-round-forward"></i>
 				</button>
 			</div>
-
+			{% for mo in movie %}
+				{{ mo.new }}
+				{% if mo.new %}
 			<div class="col-12">
 				<div class="owl-carousel home__carousel">
 					<div class="item">
 						<!-- card -->
-						{% for mo in movie %}
-							{% if mo.new %}
 								<div class="card card--big">
 									<div class="card__cover">
 										<img src="{{mo.logo.url}}" alt="">
@@ -48,8 +47,8 @@
 										<span class="card__rate"><i class="icon ion-ios-star"></i>{{mo.rating}}</span>
 									</div>
 								</div>
-							{% endif %}
-						{% endfor %}
+				{% endif %}
+			{% endfor %}
 						<!-- end card -->
 					</div>
 				</div>
