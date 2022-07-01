@@ -24,7 +24,7 @@
 					<i class="icon ion-ios-arrow-round-forward"></i>
 				</button>
 			</div>
-			{% for mo in movie %}
+			{% for mo in range(1,movie) %}
 				{{ mo.new }}
 				{% if mo.new %}
 			<div class="col-12">
