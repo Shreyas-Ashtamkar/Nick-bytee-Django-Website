@@ -12,6 +12,9 @@ class homepage_movies(models.Model):
     quality = models.CharField(max_length=4)
     age = models.CharField(max_length=5)
     trailer = models.CharField(max_length=50)
+    release_year = models.IntegerField()
+    duration = models.CharField(max_length=10)
+    country = models.CharField(max_length=10)
 
     @staticmethod
     def get_name():
